@@ -2,16 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
 }
 .about--parrafo{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65%;
     font-size: 22px;
-    gap: 100px;
+    gap: 15px;
     padding: 10px 40px 10px 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -26,4 +25,21 @@
 }
 .about--parrafo a:hover{
     color: #600b0b;
+}
+
+@media only screen and (max-width: 1500px){
+    .container_about{
+        padding: 0px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .about--parrafo{
+        flex-wrap: wrap-reverse;
+        font-size: 18px;
+        width: 95%;
+    }
+    .about--parrafo img{
+        width: 300px;
+    }
 }

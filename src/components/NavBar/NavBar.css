@@ -1,37 +1,44 @@
-.container_NavBar{
+.container_navBar{
+    top: 0;
+    position: fixed;
+    min-width: 100%;
     font-size: 20px;
-    display: flex;
     z-index: 10;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-width: 100% auto;
-    padding: 20px;
     margin-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
-.container_NavBar a{
+.scrolled{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.container_navBar a{
     text-decoration: none;
     color: #292a2c;
 }
 
-.NavBar--logo{
+.navBar--logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
-.container_NavBar h1 a{
+.container_navBar h1 a{
     font-size: 50px;
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
     color: #292a2c;
 }
-.container_NavBar h1 a:hover{
+.container_navBar h1 a:hover{
     color: #600b0b;
 }
-.Navbar--responsive{
+.navbar--responsive{
     display: none;
     background-color: rgba(0, 0, 0, 0.1);
 }
-.Navbar--responsive ul{
+.navbar--responsive ul{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -39,19 +46,19 @@
     letter-spacing: 3.5px;
     text-align: center;
 }
-.NavBar--links{
+.navBar--links{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.NavBar--links ul{
+.navBar--links ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 50px;
     letter-spacing: 3.5px;
 }
-.NavBar--links ul a{
+.navBar--links ul a{
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -60,7 +67,7 @@
     color: #292a2c;
 }
 
-.NavBar--links ul a:hover, .NavBar--links ul a:focus {
+.navBar--links ul a:hover, .navBar--links ul a:focus {
     background-size: 100% 2px;
     cursor: pointer;
     color: #600b0b;
@@ -72,23 +79,24 @@
 
 
 @media only screen and (max-width: 700px){
-    .container_NavBar{
+    .container_navBar{
         padding: 5px;
+        width: 100%;
     }
-    .NavBar--links{
+    .navBar--links{
         display: none;
     }
     .lines{
         display: block;
     }
-    .Navbar--responsive:hover{
+    .navbar--responsive:hover{
         display: block;
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: top;
         align-items: top;
-        top: 112px;
+        top: 160px;
         right: 0px;
         padding-top: 20px;
         min-width: 100%;
@@ -97,7 +105,7 @@
         gap: 30px;
         text-align: center;
     }
-    .lines:hover + .Navbar--responsive{
+    .lines:hover + .navbar--responsive{
         display: block;
         position: absolute;
         display: flex;

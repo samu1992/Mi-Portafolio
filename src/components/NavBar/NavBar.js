@@ -1,11 +1,31 @@
 import './NavBar.css';
+import { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+  const [navbarClass, setNavbarClass] = useState('');
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.pageYOffset > 0) {
+        setNavbarClass('scrolled');
+      } else {
+        setNavbarClass('');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="container_NavBar">
-      <div className="NavBar--logo"><h1><Link to='/'>SC</Link></h1></div>
-      <div className="NavBar--links">
+    <div className={`container_navBar ${navbarClass}`}>
+      <div className="navBar--logo"><h1><Link to='/'>SC</Link></h1></div>
+      <div className="navBar--links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
           <li><a href='.'>Resumen</a></li>
@@ -14,7 +34,7 @@ const NavBar = () => {
         </ul>
       </div>
       <i  class="fa-solid fa-grip-lines lines"/>
-      <div className="Navbar--responsive">
+      <div className="navbar--responsive">
         <ul>
         <li><Link to='/About'>Sobre mi</Link></li>
           <li><a target='_blank' rel="noreferrer"  href='.'>Resumen</a></li>

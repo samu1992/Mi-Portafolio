@@ -3,6 +3,10 @@
     min-height: 100vh;
     background-color: rgba(149, 149, 149, 0.7);
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    overflow: hidden;
 }
 
 

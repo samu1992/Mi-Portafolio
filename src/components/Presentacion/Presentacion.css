@@ -4,8 +4,10 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
+    width: 95%;
+    padding: 20px;
     margin-top: 100px;
+
 }
 .presentacion--img{
     overflow: hidden;
@@ -24,11 +26,13 @@
 }
 
 .presentacion--parrafo{
-    padding: 15px;
-    max-width: 50%;
+    padding: 10px;
+    min-width: 90%;
+    text-transform: uppercase;
+    border-radius: 25px;
 }
 .presentacion--parrafo p{
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     line-height: 1.5;
     letter-spacing: 3px;
     color: #292a2c;
@@ -38,14 +42,38 @@
     color: #ffffff;
 }
 .presentacion--parrafo strong{
-    font-size: 4rem;
+    font-size: 7rem;
     color: #292a2c;
 }
 .presentacion--parrafo strong::selection{
     background-color: #000000;
     color: #ffffff;
 }
-.presentacion--parrafo strong:hover{
-    color: #600b0b;
-    cursor: pointer;
+
+
+@media only screen and (max-width: 750px){
+    .presentacion--parrafo p{
+        font-size: 3rem;
+    }
+    .presentacion--parrafo strong{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 590px){
+    .presentacion--parrafo p{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .presentacion--parrafo p{
+        font-size: 1.5rem;
+    }
+    .presentacion--parrafo strong{
+        font-size: 2.5rem;
+    }
+    .container_presentacion{
+        margin-top: 50px;
+    }
 }
