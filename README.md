@@ -1,3 +1,18 @@
+![logo](https://github.com/samu1992/Mi-Portafolio/blob/master/src/imagenes/portada.png)
+
+
+## Descripcion del Proyecto
+
+Este repositorio contiene el código fuente de mi portafolio personal, desarrollado utilizando React.js, CSS y React Router DOM. El proyecto tiene una interfaz minimalista pero atractiva, diseñada para presentar mi experiencia y habilidades de manera clara y concisa.
+
+El portafolio incluye enlaces a todos mis proyectos y logros educativos, permitiendo a los visitantes obtener una visión completa de mi proceso de aprendizaje y educación.
+
+En cuanto a la técnica, el proyecto fue construido utilizando React.js como framework principal, lo cual permite una mayor escalabilidad y facilidad en el desarrollo de componentes. Además, se utilizó React Router DOM para manejar las rutas y navegación en la aplicación.
+
+En cuanto al diseño, se utilizó CSS para darle estilo y personalización a la interfaz. También se incorporó una estética minimalista para enfatizar en la presentación de mi experiencia y habilidades.
+
+En general, mi portafolio es una excelente herramienta para mostrar mi experiencia y habilidades en el desarrollo web y estoy emocionado de compartirlo con el mundo. Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
