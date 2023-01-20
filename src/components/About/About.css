@@ -1,0 +1,29 @@
+.container_about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.about--parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    font-size: 22px;
+    gap: 100px;
+    padding: 10px 40px 10px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.about--parrafo img{
+    object-fit: cover;
+    float: right;
+    width: 400px;
+}
+.about--parrafo a{
+    text-decoration: none;
+    color: #292a2c;
+}
+.about--parrafo a:hover{
+    color: #600b0b;
+}

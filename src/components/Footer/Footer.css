@@ -1,0 +1,79 @@
+.container_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 25px;
+    min-width: 100% auto;
+    gap: 60px;
+    padding: 20px 40px 60px 40px;
+}
+.container_footer--email a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #3d3e40;
+    transition: all 0.3s;
+}
+.container_footer--email a:hover{
+    color: #600b0b;
+}
+.container_footer--redes{
+    display: flex;
+    gap: 60px;
+}
+.container_footer--redes a{
+    font-size: 40px;
+    color: #3d3e40;
+    transition: all 0.3s;
+}
+.github {
+    border: 1px solid #3d3e40;
+}
+.github img{
+    color: #3d3e40;
+    width: 40px;
+    transition: all 0.3s;
+}
+.container_footer--redes a:hover{
+    color: #600b0b;;
+}
+.container_footer--title h2{
+    color: #3d3e40;
+    font-size: 40px;
+    animation-name: logo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.container_footer-logo{
+    font-family: 'Orbitron', sans-serif;
+    color: #3d3e40;
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 680px){
+    .container_footer--redes a{
+        font-size: 28px;
+    }
+    .container_footer--email a{
+        font-size: 28px;
+    }
+    .container_footer--title h2{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 420px){
+    .container_footer--redes a{
+        font-size: 20px;
+    }
+    .container_footer--redes{
+        gap: 30px;
+    }
+    .container_footer--email a{
+        font-size: 20px;
+    }
+    .container_footer--title h2{
+        font-size: 22px;
+    }
+}

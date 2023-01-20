@@ -1,0 +1,118 @@
+.container_NavBar{
+    font-size: 20px;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100% auto;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.container_NavBar a{
+    text-decoration: none;
+    color: #292a2c;
+}
+
+.NavBar--logo{
+    margin: 0;
+    padding: 0;
+}
+.container_NavBar h1 a{
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    color: #292a2c;
+}
+.container_NavBar h1 a:hover{
+    color: #600b0b;
+}
+.Navbar--responsive{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.Navbar--responsive ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    letter-spacing: 3.5px;
+    text-align: center;
+}
+.NavBar--links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavBar--links ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    letter-spacing: 3.5px;
+}
+.NavBar--links ul a{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: #292a2c;
+}
+
+.NavBar--links ul a:hover, .NavBar--links ul a:focus {
+    background-size: 100% 2px;
+    cursor: pointer;
+    color: #600b0b;
+}
+.lines{
+    display: none;
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 700px){
+    .container_NavBar{
+        padding: 5px;
+    }
+    .NavBar--links{
+        display: none;
+    }
+    .lines{
+        display: block;
+    }
+    .Navbar--responsive:hover{
+        display: block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: top;
+        top: 112px;
+        right: 0px;
+        padding-top: 20px;
+        min-width: 100%;
+        height: 100vh;
+        z-index: 100;
+        gap: 30px;
+        text-align: center;
+    }
+    .lines:hover + .Navbar--responsive{
+        display: block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: top;
+        top: 112px;
+        right: 0px;
+        padding-top: 20px;
+        min-width: 100%;
+        height: 100vh;
+        z-index: 100;
+        gap: 30px;
+        text-align: center;
+    }
+
+
+}
