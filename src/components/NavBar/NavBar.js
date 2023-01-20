@@ -28,7 +28,7 @@ const NavBar = () => {
       <div className="navBar--links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a target='_blank' rel='noreferrer' href={resumen}>Resumen</a></li>
+          <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li>
           <li><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>
@@ -41,7 +41,7 @@ const NavBar = () => {
       <div className="navbar--responsive">
         <ul>
         <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a target='_blank' rel='noreferrer' href={resumen}>Resumen</a></li>
+          <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>
