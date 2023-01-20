@@ -1,6 +1,6 @@
 import './NavBar.css';
 import { useEffect, useState } from 'react';
-
+import resumen from '../../imagenes/SamuelCarrizo.pdf';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -28,16 +28,20 @@ const NavBar = () => {
       <div className="navBar--links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a href='.'>Resumen</a></li>
+          <li><a target='_blank' rel='noreferrer' href={resumen}>Resumen</a></li>
           <li><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>
       </div>
-      <i  class="fa-solid fa-grip-lines lines"/>
+      <button className='lines'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
       <div className="navbar--responsive">
         <ul>
         <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a target='_blank' rel="noreferrer"  href='.'>Resumen</a></li>
+          <li><a target='_blank' rel='noreferrer' href={resumen}>Resumen</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>

@@ -74,7 +74,6 @@
 }
 .lines{
     display: none;
-    font-size: 30px;
 }
 
 
@@ -87,7 +86,29 @@
         display: none;
     }
     .lines{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        border: 0;
+        background-color: transparent;
+        gap: 0.65rem;
+    }
+    .lines > div{
+        background: black;
+        height: 2px;
+        width: 100%;
+        border-radius: 5px;
+        transition: all .3s;
+        transform-origin: left;
+    }
+    .lines:hover div:first-child{
+        transform: rotate(45deg);
+    }
+    .lines:hover div:nth-child(2){
+        opacity: 0;
+    }
+    .lines:hover div:last-child{
+        transform: rotate(-45deg);
     }
     .navbar--responsive:hover{
         display: block;
@@ -96,7 +117,7 @@
         flex-direction: column;
         justify-content: top;
         align-items: top;
-        top: 160px;
+        top: 150px;
         right: 0px;
         padding-top: 20px;
         min-width: 100%;
@@ -112,7 +133,7 @@
         flex-direction: column;
         justify-content: top;
         align-items: top;
-        top: 112px;
+        top: 150px;
         right: 0px;
         padding-top: 20px;
         min-width: 100%;
