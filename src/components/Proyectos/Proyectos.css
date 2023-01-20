@@ -28,6 +28,9 @@
 .titulo--h3 a:hover{
     color: #600b0b;
 }
+.titulo--h3{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 .proyectos--titulo P{
     font-size: 20px;
     letter-spacing: 3px;
@@ -68,7 +71,6 @@
     border-radius: 2px;
     overflow: hidden;
 }
-
 
 .proyectos--lista img{
     max-width: 500px;
