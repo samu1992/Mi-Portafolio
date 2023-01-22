@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <div className={`container_navBar ${navbarClass}`}>
-      <div className="navBar--logo"><h1><Link to='/'>SC</Link></h1></div>
+      <div className='navBar--logo'><h1><Link to='/'>SC</Link></h1></div>
       <div className="navBar--links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>

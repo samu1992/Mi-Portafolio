@@ -1,19 +1,24 @@
 import './About.css';
-import yo from '../../imagenes/PerfilSamuel.png';
-import resumen from '../../imagenes/SamuelCarrizo.pdf';
 
 const About = () => {
   return (
     <div className='container_about'>
-      <div className='about--parrafo'>
-        <p>Soy un desarrollador web apasionado por aprender y enfrentar desafíos desconocidos. Durante los últimos 8 meses,
-          me he especializado en React js y tengo una mentalidad de crecimiento constante.<br /><br /> Disfruto analizar las cosas
-          desde diferentes puntos de vista y participar en debates, esto me permite
-          ampliar mi perspectiva y aprender cosas nuevas. Mi pasión por la vida, me hacen ser
-          una persona positiva y optimista, estoy ansioso de continuar mi viaje en este mundo de desarrollo web y ver
-          lo que el futuro me depara.<br /><br />En mi tiempo libre suelo andar
-          en moto los fines de semana, salir de la ciudad y buscar aire fresco o visitar algun cafe.<br /><br /><strong><a target='_blank' rel='noreferrer' href={resumen}>Ver Resume Curricular ↗</a></strong></p>
-        <img alt='me' src={yo} />
+      <div className='about_parrafo--1'>
+        <p>Me encanta crear experiencias digitales y comunicación visual. Creo que el diseño no está allí solo para ser hermoso,
+          el diseño habla.</p>
+      </div>
+      <div className='about_parrafo--2'>
+        <p>pero esperamos que hable en un idioma que entendamos...<br/> que no sea demasiado alto ni demasiado bajo.
+       Queremos <br/> que sea una voz cálida que nos guíe a través de varias experiencias.</p>
+      </div>
+      <div className='about_parrafo--3'>
+          <p>Siempre estoy tratando de aprender
+          algo nuevo y quiero convertirme en un diseñador web  a tiempo completo. Aprender sobre la web y el diseño en general.
+          Siempre trato de ampliar mi conocimiento para mejorar en lo que hago.</p>
+      </div>
+      <div className='about_parrafo--4'>
+        <p>"Puedo dar vida a tu nuevo proyecto". Comenzamos?</p>
+        <img alt='gif' src='https://media.giphy.com/media/mgqefqwSbToPe/giphy.gif'/>
       </div>
     </div>
   )

@@ -10,8 +10,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
 .scrolled{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
+
 .container_navBar a{
     text-decoration: none;
     color: #292a2c;
@@ -75,7 +77,6 @@
 .lines{
     display: none;
 }
-
 
 @media only screen and (max-width: 700px){
     .container_navBar{

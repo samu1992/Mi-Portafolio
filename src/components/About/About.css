@@ -5,42 +5,123 @@
     justify-content: space-between;
     padding: 50px;
 }
-.about--parrafo{
+.about_parrafo--1{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 50px 50px 0px 50px;
+    min-width: 100%;
+}
+.about_parrafo--1 p{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 6.5rem;
+}
+.about_parrafo--2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    min-width: 100%;
+}
+.about_parrafo--2 p{
     font-size: 22px;
-    gap: 15px;
-    padding: 10px 40px 10px 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    line-height: 3rem;
 }
-.about--parrafo img{
-    object-fit: cover;
-    float: right;
-    width: 400px;
-    height: 500px;
+.about_parrafo--3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+    min-width: 100%;
 }
-.about--parrafo a{
-    text-decoration: none;
-    color: #292a2c;
+.about_parrafo--3 p{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 6.5rem;
 }
-.about--parrafo a:hover{
-    color: #600b0b;
+.about_parrafo--4{
+    display: flex;
+    min-width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.about_parrafo--4 p{
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1500px){
-    .container_about{
-        padding: 0px;
-        width: 100%;
+    .about_parrafo--1 p{
+        font-size: 50px;
+        line-height: 5.5rem;    
+    }
+    .about_parrafo--3 p{
+        font-size: 50px;
+        line-height: 5.5rem; 
     }
 }
 @media only screen and (max-width: 1000px){
-    .about--parrafo{
-        flex-wrap: wrap-reverse;
+    .about_parrafo--1 p{
+        font-size: 40px;  
+    }
+    .about_parrafo--1{
+        padding: 25px
+    }
+    .about_parrafo--2{
+        padding: 25px
+    }
+    .about_parrafo--3{
+        padding: 25px
+    }
+    .about_parrafo--3 p{
+        font-size: 40px;
+    }
+    .about_parrafo--4 img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .about_parrafo--1 p{
+        font-size: 30px; 
+        line-height: 3rem; 
+    }
+    .about_parrafo--3 p{
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    .about_parrafo--4 img{
+        width: 150px;
+    }
+    .about_parrafo--2 p{
         font-size: 18px;
-        width: 95%;
+        line-height: 1.5rem;
     }
-    .about--parrafo img{
-        width: 300px;
+    .about_parrafo--1{
+        padding: 15px
     }
+    .about_parrafo--2{
+        padding: 15px
+    }
+    .about_parrafo--3{
+        padding: 15px
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .about_parrafo--1{
+        padding: 5px
+    }
+    .about_parrafo--2{
+        padding: 5px
+    }
+    .about_parrafo--3{
+        padding: 5px
+    }
+    .about_parrafo--4{
+        padding: 5px
+    }
+
 }
