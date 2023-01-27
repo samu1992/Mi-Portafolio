@@ -8,11 +8,12 @@
     align-items: center;
     margin-bottom: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    transition: all 0.5s;
+    margin: 0;
 }
 .scrolled{
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .container_navBar a{
     text-decoration: none;
@@ -36,17 +37,24 @@
 .container_navBar h1 a:hover{
     color: #600b0b;
 }
+
 .navbar--responsive{
     display: none;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .navbar--responsive ul{
     display: flex;
     flex-direction: column;
+    justify-content: top;
+    align-items: center;
     list-style: none;
     gap: 30px;
     letter-spacing: 3.5px;
     text-align: center;
+    margin: 10 0 0 0;
+}
+.navbar--responsive a{
+    color: #a0abc3;
 }
 .navBar--links{
     display: flex;
@@ -79,10 +87,6 @@
 }
 
 @media only screen and (max-width: 700px){
-    .container_navBar{
-        padding: 5px;
-        width: 100%;
-    }
     .navBar--links{
         display: none;
     }
@@ -111,38 +115,15 @@
     .lines:hover div:last-child{
         transform: rotate(-45deg);
     }
-    .navbar--responsive:hover{
-        display: block;
-        position: absolute;
+    .navbar--open {
         display: flex;
-        flex-direction: column;
-        justify-content: top;
+        justify-content: center;
         align-items: top;
-        top: 150px;
-        right: 0px;
-        padding-top: 20px;
         min-width: 100%;
         height: 100vh;
         z-index: 100;
         gap: 30px;
         text-align: center;
+        margin: 7px 0px 0px 0px;
     }
-    .lines:hover + .navbar--responsive{
-        display: block;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: top;
-        top: 150px;
-        right: 0px;
-        padding-top: 20px;
-        min-width: 100%;
-        height: 100vh;
-        z-index: 100;
-        gap: 30px;
-        text-align: center;
-    }
-
-
 }

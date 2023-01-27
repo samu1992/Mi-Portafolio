@@ -67,14 +67,8 @@
     .about_parrafo--1 p{
         font-size: 40px;  
     }
-    .about_parrafo--1{
-        padding: 25px
-    }
-    .about_parrafo--2{
-        padding: 25px
-    }
-    .about_parrafo--3{
-        padding: 25px
+    .parrafo{
+        padding: 25px;
     }
     .about_parrafo--3 p{
         font-size: 40px;
@@ -84,14 +78,6 @@
     }
 }
 @media only screen and (max-width: 800px){
-    .about_parrafo--1 p{
-        font-size: 30px; 
-        line-height: 3rem; 
-    }
-    .about_parrafo--3 p{
-        font-size: 30px;
-        line-height: 3rem;
-    }
     .about_parrafo--4 img{
         width: 150px;
     }
@@ -99,29 +85,18 @@
         font-size: 18px;
         line-height: 1.5rem;
     }
-    .about_parrafo--1{
-        padding: 15px
-    }
-    .about_parrafo--2{
-        padding: 15px
-    }
-    .about_parrafo--3{
-        padding: 15px
+    .parrafo{
+        padding:15px;
+        font-size: 30px;
     }
 }
 
-@media only screen and (max-width: 800px){
-    .about_parrafo--1{
-        padding: 5px
+@media only screen and (max-width: 620px){
+    .parrafo{
+        padding:5px;
     }
-    .about_parrafo--2{
-        padding: 5px
-    }
-    .about_parrafo--3{
-        padding: 5px
-    }
-    .about_parrafo--4{
-        padding: 5px
+    .parrafo P{
+        line-height: 2.3rem;
     }
 
 }

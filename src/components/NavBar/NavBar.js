@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [navbarClass, setNavbarClass] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
+
 
   useEffect(() => {
     function handleScroll() {
@@ -23,30 +25,30 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className={`container_navBar ${navbarClass}`}>
-      <div className='navBar--logo'><h1><Link to='/'>SC</Link></h1></div>
-      <div className="navBar--links">
+    <header className={`container_navBar ${navbarClass}`}>
+      <section className='navBar--logo'><h1><Link to='/'>SC</Link></h1></section>
+      <nav className="navBar--links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
           <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li>
           <li><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>
-      </div>
-      <button className='lines'>
+      </nav>
+      <button className='lines' onClick={() => setMenuOpen(!menuOpen)}>
         <div></div>
         <div></div>
         <div></div>
       </button>
-      <div className="navbar--responsive">
+      <nav className={`navbar--responsive ${menuOpen ? 'navbar--open' : 'navbar--closed'}`}>
         <ul>
-        <li><Link to='/About'>Sobre mi</Link></li>
+          <li><Link to='/About'>Sobre mi</Link></li>
           <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://www.linkedin.com/in/samuel-carrizo-844980176/'>LinkedIn</a></li>
           <li><a target='_blank' rel="noreferrer"  href='https://github.com/samu1992'>Github</a></li>
         </ul>
-      </div>
-    </div>
+      </nav> 
+    </header>
   )
 }
 

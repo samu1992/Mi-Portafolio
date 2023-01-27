@@ -10,7 +10,6 @@
 
 }
 
-
 .presentacion--parrafo{
     padding: 10px;
     min-width: 90%;
@@ -35,7 +34,6 @@
     background-color: #000000;
     color: #ffffff;
 }
-
 
 @media only screen and (max-width: 750px){
     .presentacion--parrafo p{
