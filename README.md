@@ -1,4 +1,4 @@
-![logo](https://github.com/samu1992/Mi-Portafolio/blob/master/src/imagenes/fondoLink.jpg)
+![logo](https://github.com/samu1992/Mi-Portafolio/blob/master/src/imagenes/fondoLink.png)
 
 
 ## Descripcion del Proyecto
