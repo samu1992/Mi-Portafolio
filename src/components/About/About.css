@@ -38,15 +38,10 @@
     gap: 50px;
 }
 
-@media only screen and (max-width: 1500px){
-    .parrafo p{
-        font-size: 50px;
-        line-height: 5.5rem; 
-    }
-}
+
 @media only screen and (max-width: 1000px){
     .parrafo p{
-        font-size: 40px;  
+        font-size: 30px;  
     }
     .parrafo{
         padding: 25px;
@@ -67,6 +62,9 @@
         padding:15px;
         font-size: 20px;
     }
+    .container--About{
+        gap: 50px;
+    }
 }
 
 @media only screen and (max-width: 620px){
@@ -74,10 +72,13 @@
         padding:5px;
     }
     .parrafo P{
-        line-height: 2rem;
-        font-size: 22px;
+        line-height: 1.5rem;
+        font-size: 20px;
     }
     .container--About{
         padding: 10px;
+    }
+    .container--About{
+        gap: 30px;
     }
 }
