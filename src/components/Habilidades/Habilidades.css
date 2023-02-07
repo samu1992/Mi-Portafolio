@@ -1,0 +1,64 @@
+#container_Habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.habilidades--Logo a {
+    font-size: 50px;
+}
+.react a {
+    color: #0bcbf2;
+}
+
+.js a {
+    color: #f3ff50;
+}
+
+.html a {
+    color: #ea8022;
+}
+
+.css a {
+    color: #1527cf;
+}
+
+.boot a {
+    color: #563d7c;
+}
+
+.node a {
+    color: #68a063;
+}
+
+.git a {
+    color: #f14e32;
+}
+
+.sass a {
+    color: #c76494;
+}
+
+.github a {
+    color: #000000;
+}
+@media only screen and (max-width: 1200px) {
+    .habilidades--Logo a {
+        font-size: 30px;
+    }
+    #container_Habilidades{
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .habilidades--Logo a {
+        font-size: 25px;
+    }
+    #container_Habilidades{
+        gap: 15px;
+    }
+}

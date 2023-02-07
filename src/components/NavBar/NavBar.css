@@ -1,93 +1,109 @@
-.container_navBar{
-    top: 0;
+.container--Navbar{
+    margin: 0 auto;
     position: fixed;
-    min-width: 100%;
-    font-size: 20px;
+    height: 130px;
+    top: 0;
     z-index: 10;
-    justify-content: center;
+    font-size: 20px;
+    transition: all 0.6s;
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-    transition: all 0.5s;
-    margin: 0;
+    background-color: #24303d;
 }
 .scrolled{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(36, 48, 61, 0.6);
 }
-
-.container_navBar a{
+.container--Redes{
+    display: flex;
+    gap: 60px;
+    margin: 0px 0px 0px 35px;
+}
+.container--Redes a{
+    font-size: 30px;
+    color: #0D9488;
+    transition: all 0.3s;
+}
+.container--Redes a:hover{
+    color: #ffffff;
+}
+.container--Navbar a{
     text-decoration: none;
-    color: #292a2c;
 }
-
-.navBar--logo{
+.navbar--Links{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin: 0px 35px 0px 0px;
 }
-.container_navBar h1 a{
-    font-size: 50px;
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    cursor: pointer;
-    color: #292a2c;
-}
-.container_navBar h1 a:hover{
-    color: #600b0b;
-}
-
-.navbar--responsive{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.navbar--responsive ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-    letter-spacing: 3.5px;
-    text-align: center;
-    margin: 10 0 0 0;
-}
-.navbar--responsive a{
-    color: #a0abc3;
-}
-.navBar--links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navBar--links ul{
+.navbar--Links ul{
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 50px;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
 }
-.navBar--links ul a{
+.navbar--Links ul a{
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
-    color: #292a2c;
+    color: #f6f6f6;
 }
 
-.navBar--links ul a:hover, .navBar--links ul a:focus {
+.navbar--Links ul a:hover, .navbar--Links ul a:focus {
     background-size: 100% 2px;
     cursor: pointer;
-    color: #600b0b;
+    color: #0D9488;
 }
+
+.navbar--Responsive{
+    display: none;
+    height: 0;
+    width: 60%;
+    background-color: #0D9488;
+    transition: all 1s;
+}
+.navbar--Responsive ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+    letter-spacing: 2.5px;
+    text-align: start;
+    margin: 0;
+}
+.navbar--Responsive a{
+    color: #f6f6f6;
+}
+.navbar--Avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(36, 48, 61, 0.3);
+}
+.avatar img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.navbar--Avatar h2{
+    color: #f6f6f6;
+}
+
 .lines{
     display: none;
 }
 
-@media only screen and (max-width: 700px){
-    .navBar--links{
+@media only screen and (max-width: 800px){
+    .navbar--Links{
         display: none;
     }
     .lines{
@@ -97,9 +113,10 @@
         border: 0;
         background-color: transparent;
         gap: 0.65rem;
+        margin-right: 25px;
     }
     .lines > div{
-        background: black;
+        background: #0D9488;
         height: 2px;
         width: 100%;
         border-radius: 5px;
@@ -115,15 +132,15 @@
     .lines:hover div:last-child{
         transform: rotate(-45deg);
     }
-    .navbar--open {
+    .navbar--Open {
+        position: absolute;
+        top: 0px;
+        overflow: hidden;
+        left: 0px;
         display: flex;
-        justify-content: center;
-        align-items: top;
-        min-width: 100%;
-        height: 100vh;
+        flex-direction: column;
+        padding: 15px;
+        min-height: 100vh;
         z-index: 100;
-        gap: 30px;
-        text-align: center;
-        margin: 7px 0px 0px 0px;
     }
 }

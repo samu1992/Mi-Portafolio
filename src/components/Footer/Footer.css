@@ -1,79 +1,64 @@
-.container_footer{
+.container--Footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 25px;
-    min-width: 100% auto;
+    max-width: 100%;
     gap: 60px;
-    padding: 20px 40px 60px 40px;
+    padding: 60px;
 }
-.container_footer--email a{
+.container--Footer--Email a{
     font-size: 40px;
     text-decoration: none;
-    color: #3d3e40;
+    color: #8fb0b4;
     transition: all 0.3s;
 }
-.container_footer--email a:hover{
-    color: #600b0b;
+.container--Footer--Email a:hover{
+    color: #0D9488;
 }
-.container_footer--redes{
+.container--Footer--Redes{
     display: flex;
     gap: 60px;
 }
-.container_footer--redes a{
+.container--Footer--Redes a{
     font-size: 40px;
-    color: #3d3e40;
+    color: #8fb0b4;
     transition: all 0.3s;
 }
-.github {
-    border: 1px solid #3d3e40;
+
+.container--Footer--Redes a:hover{
+    color: #0D9488;
 }
-.github img{
-    color: #3d3e40;
-    width: 40px;
-    transition: all 0.3s;
-}
-.container_footer--redes a:hover{
-    color: #600b0b;;
-}
-.container_footer--title h2{
-    color: #3d3e40;
-    font-size: 40px;
-    animation-name: logo;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-.container_footer-logo{
+.container--Footer--Logo{
     font-family: 'Orbitron', sans-serif;
-    color: #3d3e40;
+    color: #8fb0b4;
     font-size: 40px;
 }
 
 
 @media only screen and (max-width: 680px){
-    .container_footer--redes a{
+    .container--Footer--Redes a{
         font-size: 28px;
     }
-    .container_footer--email a{
+    .container--Footer--Email a{
         font-size: 28px;
     }
-    .container_footer--title h2{
+    .container--Footer--Logo h2{
         font-size: 28px;
     }
 }
 @media only screen and (max-width: 420px){
-    .container_footer--redes a{
+    .container--Footer--Redes a{
         font-size: 20px;
     }
-    .container_footer--redes{
+    .container--Footer--Redes{
         gap: 30px;
     }
-    .container_footer--email a{
+    .container--Footer--Email a{
         font-size: 20px;
     }
-    .container_footer--title h2{
+    .container--Footer--Logo h2{
         font-size: 22px;
     }
 }

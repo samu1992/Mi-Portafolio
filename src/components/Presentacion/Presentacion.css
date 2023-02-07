@@ -1,63 +1,117 @@
-.container_presentacion{
+.container--Presentacion{
     display: flex;
-    flex-direction: row;
+    width: 100% auto;
+    padding: 50px 150px;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    width: 95%;
-    padding: 20px;
-    margin-top: 100px;
-
+    gap: 35px;
+    margin: 130px 0px 50px 0px;
 }
-
-.presentacion--parrafo{
+.presentacion--Parrafo{
     padding: 10px;
-    min-width: 90%;
     text-transform: uppercase;
-    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.presentacion--parrafo p{
-    font-size: 4.2rem;
+.presentacion--Parrafo p {
+    font-size: 2.2rem;
     line-height: 1.5;
     letter-spacing: 3px;
-    color: #292a2c;
+    color: #f6f6f6;
+    text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
 }
-.presentacion--parrafo p::selection{
+.presentacion--Parrafo p::selection {
     background-color: #000000;
     color: #ffffff;
 }
-.presentacion--parrafo strong{
-    font-size: 7rem;
-    color: #292a2c;
+.presentacion--Parrafo strong {
+    font-size: 3rem;
+    color: #f6f6f6;
 }
-.presentacion--parrafo strong::selection{
+.presentacion--Parrafo strong::selection {
     background-color: #000000;
     color: #ffffff;
 }
-
-@media only screen and (max-width: 750px){
-    .presentacion--parrafo p{
-        font-size: 3rem;
+.mi--Foto {
+    height: 100%;
+    display: flex;
+}
+.mi--Foto img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 0.5px solid #061D1C;
+}
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s 1s;
+    animation: tracking-in-expand 1s 1s;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
-    .presentacion--parrafo strong{
-        font-size: 5rem;
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
 
-@media only screen and (max-width: 590px){
-    .presentacion--parrafo p{
-        font-size: 2.5rem;
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
-
-@media only screen and (max-width: 480px){
-    .presentacion--parrafo p{
+@media only screen and (max-width: 1200px) {
+    .container--Presentacion {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .presentacion--Parrafo p {
         font-size: 1.5rem;
+        width: 600px;
     }
-    .presentacion--parrafo strong{
-        font-size: 2.5rem;
+    .presentacion--Parrafo{
+        padding: 0px;
     }
-    .container_presentacion{
-        margin-top: 50px;
+    .presentacion--Parrafo strong {
+        font-size: 1.8rem;
+    }
+    .mi--Foto img{
+        width: 300px;
+        height: 300px;
+    }
+    .container--Presentacion{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .presentacion--Parrafo p {
+        font-size: 16px;
+        width: auto;
+    }
+    .presentacion--Parrafo{
+        padding-left: 20px;
+    }
+    .presentacion--Parrafo strong {
+        font-size: 18px;
+    }
+    .mi--Foto img{
+        width: 250px;
+        height: 250px;
     }
 }
