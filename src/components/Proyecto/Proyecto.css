@@ -9,6 +9,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(40, 56, 69, 1);
     border-radius: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 .proyecto--Detalle{
     display: flex;

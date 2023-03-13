@@ -3,6 +3,8 @@ import './Habilidades.css'
 const Habilidades = () => {
     return (
             <aside id='container_Habilidades'>
+                <h2>Skills</h2>
+                <section className='container_Habilidades_Logos'>
                 <div className='habilidades--Logo react'><a href="."><i className="fa-brands fa-react" /></a></div>
                 <div className='habilidades--Logo js'><a href="."><i className="fa-brands fa-square-js"></i></a></div>
                 <div className='habilidades--Logo html'><a href="."><i className="fa-brands fa-html5"></i></a></div>
@@ -12,6 +14,8 @@ const Habilidades = () => {
                 <div className='habilidades--Logo git'><a href="."><i className="fa-brands fa-git"></i></a></div>
                 <div className='habilidades--Logo github'><a href="."><i className="fa-brands fa-github"></i></a></div>
                 <div className='habilidades--Logo sass'><a href="."><i className="fa-brands fa-sass"></i></a></div>
+                <div className='habilidades--Logo'><a href="."><i className="fa-brands fa-figma"></i></a></div>
+                </section>
             </aside>
     )
 }

@@ -1,5 +1,5 @@
 import './Presentacion.css';
-import miFoto from './miFoto.jpg'
+import miFoto from '../../imagenes/miFoto.jpg'
 
 
 const Presentacion = () => {
