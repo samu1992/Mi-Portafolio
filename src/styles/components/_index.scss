@@ -1,0 +1,5 @@
+html{
+    @include pm;
+    width: 100%;
+    background-color: $primary-color;
+}
