@@ -1,0 +1,110 @@
+.container--Proyectos {
+    @include centrar;
+    flex-wrap: wrap;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+
+        &:hover {
+            color: $tertiary-color;
+        }
+    }
+}
+
+.proyectos--Titulo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    h2 {
+        letter-spacing: 3px;
+        font-size: 40px;
+        color: $tertiary-color;
+    }
+
+    p {
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: $tertiary-color;
+    }
+}
+
+.proyectos--Lista {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    @include pm;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .proyectos--Lista {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container--Proyectos {
+        padding: 10px;
+
+        .proyectos--Lista {
+            margin: 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 782px) {
+    .container--Proyectos {
+        gap: 30px;
+
+        .proyectos--Lista {
+            margin: 0;
+            gap: 15px;
+        }
+    }
+
+    .proyectos--Titulo {
+        padding: 10px 10px 10px 50px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .proyectos--Lista {
+        margin: 0;
+        padding: 10px;
+        width: 90% auto;
+
+        .proyectos--Titulo {
+            padding: 20px;
+            padding: 0;
+            width: 60%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .proyectos--Titulo {
+        padding: 0;
+        width: 70%;
+        padding: 10px;
+
+        .proyectos--Lista {
+            margin: 0;
+            width: 90% auto;
+        }
+    }
+
+}

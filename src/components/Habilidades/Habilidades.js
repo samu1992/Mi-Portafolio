@@ -1,4 +1,4 @@
-import './Habilidades.css'
+
 
 const Habilidades = () => {
     return (

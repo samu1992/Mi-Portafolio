@@ -1,4 +1,4 @@
-import './Presentacion.css';
+
 import miFoto from '../../imagenes/miFoto.jpg'
 
 

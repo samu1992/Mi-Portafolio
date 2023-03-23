@@ -1,5 +1,3 @@
-import './Proyecto.css'
-
 
     const Proyecto = (props) => {
         const handleClick = () => {
@@ -12,7 +10,7 @@ import './Proyecto.css'
                     <p><strong>{props.title}</strong><br />{props.description}<br /><br />{props.text}</p>
                 </div>
                 <div className='proyectos--Button'>
-                    <button><a target='_blank' rel="noreferrer" href={props.code}>Ver código</a></button>
+                    <button><a className="a" target='_blank' rel="noreferrer" href={props.code}>Ver código</a></button>
                 </div>
             </article>
     );

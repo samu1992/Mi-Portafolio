@@ -1,0 +1,75 @@
+.container--Footer {
+    @include centrar;
+    flex-direction: column;
+    padding: 25px;
+    max-width: 100%;
+    gap: 60px;
+    padding: 60px;
+}
+
+.container--Footer--Email {
+    a {
+        font-size: 40px;
+        text-decoration: none;
+        color: $tertiary-color;
+        transition: all 0.3s;
+
+        &:hover {
+            @include links;
+        }
+    }
+}
+
+.container--Footer--Redes {
+    display: flex;
+    gap: 60px;
+
+    a {
+        font-size: 40px;
+        color: $tertiary-color;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.container--Footer--Logo a {
+    @include font-orbitron;
+    text-decoration: none;
+    color: $tertiary-color;
+    font-size: 40px;
+    @include pm;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondary-color;
+        transition: all 0.3s;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    .container--Footer--Redes {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .container--Footer--Redes {
+        gap: 30px;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .container--Footer--Email a {
+        font-size: 20px;
+    }
+
+    .container--Footer--Logo h2 {
+        font-size: 22px;
+    }
+}

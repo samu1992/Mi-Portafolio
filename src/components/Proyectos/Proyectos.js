@@ -1,4 +1,3 @@
-import './Proyectos.css';
 import elegant from '../../imagenes/elegant.gif';
 import faunaUrbana from '../../imagenes/faunaUrbana.gif';
 import portfolio from '../../imagenes/portfolio.gif';
@@ -16,8 +15,8 @@ const Proyectos = () => {
             </section>
             <Proyecto 
             title="Elegant"
-            description="E-commerce: Desarrollo de carrito de compras 100% funcional."
-            text="Me encargué de implementar las funcionalidades del carrito de compras, integrando con una base de datos en Firebase y utilizando las librerías de React Router DOM para manejar las rutas del sitio."
+            description="E-commerce: Desarrollo de tienda online 100% funcional."
+            text="Me encargué de implementar las funcionalidades del carrito de compras, integrando con una base de datos en Firebase y utilizando las librerías de React ja, React Router DOM, entre otras."
             img={elegant}
             site='https://proyecto-final-ruddy.vercel.app/'
             code='https://github.com/samu1992/Elegant'/>

@@ -1,0 +1,67 @@
+$color-navbar-1: rgb(36, 48, 61);
+$color-navbar-2: rgba(36, 48, 61, 0.6);
+$primary-color: #283845;
+$secondary-color: #0D9488;
+$tertiary-color: #f6f6f6;
+$fifth-color: #000000;
+
+@mixin font-orbitron{
+    font-family: 'Orbitron', sans-serif;
+}
+
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centrar-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin links {
+    background-size: 100% 2px;
+    cursor: pointer;
+    color: #0D9488;
+};
+
+@mixin pm{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s 1s;
+    animation: tracking-in-expand 1s 1s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

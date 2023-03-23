@@ -1,0 +1,84 @@
+.container--About {
+    @include centrar;
+    flex-wrap: wrap;
+    padding: 50px;
+    max-width: 100%;
+    gap: 100px;
+    margin-top: 100px;
+
+    .parrafo {
+        @include centrar;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        border-left: 1px solid rgba(248, 248, 248, 0.1);
+        padding: 20px;
+        text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+        margin-top: 100px;
+        width: 80%;
+
+        p {
+            font-size: 2.2rem;
+            line-height: 3.5rem;
+            color: $tertiary-color;
+        }
+    }
+
+    .about--Parrafo--4 {
+        @include centrar-between;
+        max-width: 100%;
+        overflow: hidden;
+        gap: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .parrafo {
+        padding: 25px;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .about--Parrafo--4 img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about--Parrafo--4 img {
+        width: 150px;
+    }
+
+    .container--About {
+        gap: 50px;
+
+        .parrafo {
+            padding: 15px;
+            font-size: 20px;
+
+            p {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .container--About {
+        padding: 10px;
+        gap: 30px;
+
+        .parrafo {
+            padding: 5px;
+
+            P {
+                line-height: 1.5rem;
+                font-size: 20px;
+            }
+        }
+    }
+}
