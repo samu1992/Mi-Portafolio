@@ -9,15 +9,7 @@
     border-radius: 5px;
     cursor: pointer;
 
-    p {
-        font-size: 20px;
-        letter-spacing: 3px;
-        margin: 0;
-        width: 600px;
-        height: 250px;
-        word-wrap: break-word;
-        color: $tertiary-color;
-    }
+    
 
     strong {
         font-size: 24px;
@@ -29,6 +21,22 @@
         min-height: 250px;
         border-radius: 5px;
         object-fit: cover;
+    }
+    section{
+        display: flex;
+        justify-content: flex-start;
+        align-items: top;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        p {
+            font-size: 20px;
+            margin: 0;
+            color: $tertiary-color;
+            text-align: start;
+            max-width: 600px;
+        }
     }
 }
 

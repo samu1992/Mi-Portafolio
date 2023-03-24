@@ -1,7 +1,8 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
-import resumen from '../../imagenes/SamuelCarrizo.pdf';
+/* import resumen from '../../imagenes/SamuelCarrizo.pdf'; */
 import { Link } from 'react-router-dom';
-import miFoto from '../../imagenes/miFoto.jpg'
+/* import miFoto from '../../imagenes/miFoto.jpg' */
 
 const NavBar = () => {
   const [navbarClass, setNavbarClass] = useState('');
@@ -37,7 +38,7 @@ const NavBar = () => {
       <nav className="navbar--Links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li>
+         {/*  <li><a target='_blank' rel='noreferrer' href={resumen}>Resume</a></li> */}
           <li><Link to='/'>Inicio</Link></li>
         </ul>
       </nav>
@@ -48,7 +49,7 @@ const NavBar = () => {
       </button>
       <nav className={`navbar--Responsive ${menuOpen ? 'navbar--Open' : 'navbar--Closed'}`}>
         <section className='navbar--Avatar'>
-          <div className='avatar'><img alt='error al cargar mi foto' src={miFoto} /></div>
+        {/*   <div className='avatar'><img alt='error al cargar mi foto' src={miFoto} /></div> */}
           <h2>Samuel Carrizo</h2>
         </section>
         <ul>
@@ -57,11 +58,11 @@ const NavBar = () => {
               Sobre mi
             </Link>
           </li>
-          <li>
+          {/* <li>
             <a href={resumen} onClick={handleLinkClick}>
               Resume
             </a>
-          </li>
+          </li> */}
           <li>
             <Link to='/' onClick={handleLinkClick}>
               Inicio
