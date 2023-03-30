@@ -10,7 +10,7 @@ const NavBar = () => {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.pageYOffset > 0) {
+      if (window.pageYOffset > 50) {
         setNavbarClass('navbar--active');
       } else {
         setNavbarClass('');
@@ -28,12 +28,12 @@ const NavBar = () => {
     setMenuOpen(false);
   };
   return (
-    <header className={`navbar-container ${navbarClass}`}>
-      <div className='container--Redes'>
+    <header className="navbar-container">
+      <div className={`container--Redes ${navbarClass}`}>
         <div><a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/samuel-carrizo-844980176/"><i className=" fab fa-linkedin"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="."><i className=" fab fa-instagram"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992"><i className="fab fa-github"></i></a></div>
-        <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992/Mi-Portafolio"><i class="fa fa-code"></i></a></div>
+        <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992/Mi-Portafolio"><i className="fa fa-code"></i></a></div>
       </div>
       <nav className="navbar--Links">
         <ul>

@@ -2,6 +2,7 @@
     @include centrar;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 100px;
 
     a {
         text-decoration: none;
@@ -11,12 +12,20 @@
             color: $tertiary-color;
         }
     }
+
+    article{
+        @include centrar;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 25px;
+    }
 }
 
 .proyectos--Titulo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 80%;
 
     h2 {
         letter-spacing: 3px;
@@ -26,21 +35,19 @@
 
     p {
         font-size: 20px;
-        letter-spacing: 3px;
+        letter-spacing: 2.5px;
         color: $tertiary-color;
     }
 }
 
 .proyectos--Lista {
-    display: block;
+    @include centrar;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
+    width: 100%;
     gap: 50px;
     @include pm;
-    overflow: hidden;
+    flex-direction: column;
     margin-bottom: 50px;
-    margin-left: 50px;
 }
 
 @media only screen and (max-width: 1200px) {

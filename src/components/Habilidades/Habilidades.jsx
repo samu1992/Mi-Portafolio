@@ -3,7 +3,6 @@
 const Habilidades = () => {
     return (
             <aside id='container_Habilidades'>
-                <h2>Skills</h2>
                 <section className='container_Habilidades_Logos'>
                 <div className='habilidades--Logo react'><a href="."><i className="fa-brands fa-react" /></a></div>
                 <div className='habilidades--Logo js'><a href="."><i className="fa-brands fa-square-js"></i></a></div>

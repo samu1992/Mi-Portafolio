@@ -10,11 +10,11 @@ const Proyecto = (props) => {
                 <section>
                 <p><strong>{props.title}</strong></p>
                 <p>{props.description}</p>
-                <p>{props.text}</p>
                 </section>
             </div>
             <div className='proyectos--Button'>
-                <button><a className="a" target='_blank' rel="noreferrer" href={props.code}>Ver código</a></button>
+                <button><a className="a" target='_blank' rel="noreferrer" href={props.code}><i className=" fab fa-github"></i>       GitHup</a></button>
+                <p>{props.tech}</p>
             </div>
         </article>
     );
