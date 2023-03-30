@@ -1,4 +1,4 @@
-html{
+html, #app{
     @include pm;
     width: 100%;
     background-color: $primary-color;
