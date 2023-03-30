@@ -4,8 +4,8 @@
     padding: 10px;
     gap: 40px;
     margin-bottom: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $color-navbar-2;
+    border: 1px solid rgba(13, 148, 136, 0.3);
+    background-color: $color-navbar-1;
     border-radius: 5px;
     cursor: pointer;
     width: 370px;
@@ -132,5 +132,10 @@
             letter-spacing: 3px;
             font-size: 14px;
         }
+    }
+}
+@media only screen and (max-width: 500px){
+    .proyecto{
+        width: 300px;
     }
 }
