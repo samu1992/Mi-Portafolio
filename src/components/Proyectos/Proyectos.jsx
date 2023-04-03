@@ -1,6 +1,6 @@
-import elegant from '../../imagenes/elegant.gif';
-import faunaUrbana from '../../imagenes/faunaUrbana.gif';
-import portfolio from '../../imagenes/portfolio.gif';
+import elegant from '../../imagenes/elegant.png';
+import faunaUrbana from '../../imagenes/fondoGit.png';
+import portfolio from '../../imagenes/soley.png';
 import Proyecto from '../Proyecto/Proyecto';
 
 
@@ -10,7 +10,7 @@ const Proyectos = () => {
             <aside className='proyectos--Lista'>
                 <section className='proyectos--Titulo'>
                     <h2>TRABAJOS</h2>
-                    <p>A quien pueda interesar parte mis trabajos<br /> hechos hasta el momento  <i className="fa-solid fa-arrow-down"></i></p>
+                    <p>A quien pueda interesar parte de mis trabajos<br /> realizados hasta el momento  <i className="fa-solid fa-arrow-down"></i></p>
                     <h3><a target='_blank' rel="noreferrer" href='https://github.com/samu1992'>Ver mas Proyectos ↗</a></h3>
                 </section>
                 <article>
@@ -28,7 +28,7 @@ const Proyectos = () => {
             dedicada al rescate de perros en situación de calle y abandono."
                         img={faunaUrbana}
                         site='https://fauna-urbana.vercel.app/'
-                        code='https://github.com/samu1992/Fauna-Urbana'
+                        code='https://github.com/samu1992/fauna-urbana'
                         tech='#React #Bootstrap #JavaScript #Vite' />
                     <Proyecto
                         title="Proyecto en Equipo"
