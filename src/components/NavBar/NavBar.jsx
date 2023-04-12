@@ -38,7 +38,7 @@ const NavBar = () => {
       <nav className="navbar--Links">
         <ul>
           <li><Link to='/About'>Sobre mi</Link></li>
-          <li><a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=share_link'>Resume</a></li>
+          <li><a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=sharing'>Resume</a></li>
           <li><Link to='/'>Inicio</Link></li>
         </ul>
       </nav>
@@ -59,7 +59,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <a href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=share_link' onClick={handleLinkClick}>
+            <a href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=sharing' onClick={handleLinkClick}>
               Resume
             </a>
           </li>
