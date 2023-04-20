@@ -35,9 +35,9 @@ const Proyectos = () => {
                         description="Desarrollo de proyecto freelance utilizando React JS,
             Bootstrap y React Router DOM."
                         img={portfolio}
-                        site='https://www.soleyflores.link/'
-                        code='https://github.com/samu1992/PortfolioSoley'
-                        tech='#Vite #React #Sass #JavaScript' />
+                        site='https://soley-porfolio.vercel.app/'
+                        code='https://github.com/samu1992/soley-porfolio'
+                        tech='#Vite #React #Sass #JavaScript #Next' />
                 </article>
             </aside>
         </main>
