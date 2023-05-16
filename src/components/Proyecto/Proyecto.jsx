@@ -8,8 +8,8 @@ const Proyecto = (props) => {
             <div onClick={handleClick} className='proyecto--Detalle'>
                 <div><img alt='error al cargar la imagen del proyecto' src={props.img} /></div>
                 <section>
-                <p><strong>{props.title}</strong></p>
-                <p>{props.description}</p>
+                    <p><strong>{props.title}</strong></p>
+                    <p>{props.description}</p>
                 </section>
             </div>
             <div className='proyectos--Button'>
