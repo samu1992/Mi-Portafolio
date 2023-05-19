@@ -2,6 +2,7 @@ import elegant from '../../imagenes/elegant.png';
 import faunaUrbana from '../../imagenes/fondoGit.png';
 import portfolio from '../../imagenes/soley.png';
 import gallery from '../../imagenes/dog-gallery.png';
+import tip from '../../imagenes/tip_calculator.png';
 import Proyecto from '../Proyecto/Proyecto';
 
 
@@ -46,6 +47,14 @@ const Proyectos = () => {
                         site='https://dogs-gallery-oshjs8xy8-samu1992.vercel.app/'
                         code='https://github.com/samu1992/dogs-gallery'
                         tech='#React Next js #Tailwind'
+                        />
+                        <Proyecto
+                        title="Tip Calculator"
+                        description="Esta es una calculadora de propina simple hecha con React y Vite. Fue creada con fines educativos como parte de la práctica de desarrollo web."
+                        img={tip}
+                        site="https://tip-calculator-eosin.vercel.app/"
+                        code="https://github.com/samu1992/tip-calculator"
+                        tech="#React #Vite #JavaScript"
                         />
                 </article>
             </aside>
