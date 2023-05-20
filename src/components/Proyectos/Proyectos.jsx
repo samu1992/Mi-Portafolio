@@ -44,7 +44,7 @@ const Proyectos = () => {
                         title="Dogs Gallery"
                         description="Galeria: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una galeria."
                         img={gallery}
-                        site='https://dogs-gallery-oshjs8xy8-samu1992.vercel.app/'
+                        site='https://dogs-gallery.vercel.app/'
                         code='https://github.com/samu1992/dogs-gallery'
                         tech='#React Next js #Tailwind'
                         />
