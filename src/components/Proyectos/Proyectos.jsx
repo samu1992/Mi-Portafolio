@@ -4,6 +4,7 @@ import portfolio from '../../imagenes/soley.png';
 import gallery from '../../imagenes/dog-gallery.png';
 import tip from '../../imagenes/tip_calculator.png';
 import Proyecto from '../Proyecto/Proyecto';
+import todo from '../../imagenes/ToDo.png';
 
 
 const Proyectos = () => {
@@ -47,6 +48,14 @@ const Proyectos = () => {
                         site='https://dogs-gallery.vercel.app/'
                         code='https://github.com/samu1992/dogs-gallery'
                         tech='#React Next js #Tailwind'
+                        />
+                        <Proyecto
+                        title="To Do List"
+                        description="Lista de tareas: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una lista de tareas."
+                        img={todo}
+                        site="https://to-do-sepia-alpha.vercel.app/"
+                        code="https://github.com/samu1992/to-do"
+                        tech='#React #Vite #JavaScript'
                         />
                         <Proyecto
                         title="Tip Calculator"
