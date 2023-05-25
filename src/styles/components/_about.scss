@@ -45,12 +45,12 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .parrafo {
-        padding: 25px;
+        padding: 15px;
 
         p {
-            font-size: 30px;
+            font-size: 22px;
         }
     }
 
@@ -70,6 +70,7 @@
         .parrafo {
             padding: 15px;
             font-size: 20px;
+            width: 100%;
 
             p {
                 font-size: 16px;
@@ -82,14 +83,14 @@
 @media only screen and (max-width: 620px) {
     .container--About {
         padding: 10px;
-        gap: 30px;
+        gap: 20px;
 
         .parrafo {
             padding: 5px;
 
             P {
-                line-height: 1.5rem;
-                font-size: 20px;
+                line-height: 1rem;
+                font-size: 18px;
             }
         }
     }

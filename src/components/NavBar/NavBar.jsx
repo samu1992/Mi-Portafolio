@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import foto from '../../imagenes/miFoto.jpg';
+import foto from '../../imagenes/foto-1.jpg';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -55,7 +55,7 @@ const NavBar = () => {
         </section>
         <ul>
           <li>
-            <a href='/About' onClick={handleLinkClick}>
+            <a href='#sobre-mi' onClick={handleLinkClick}>
               Sobre mi
             </a>
           </li>
@@ -64,6 +64,7 @@ const NavBar = () => {
               Resume
             </a>
           </li>
+          <li><a href='#proyectos'>Proyectos</a></li>
           <li>
             <Link to='/' onClick={handleLinkClick}>
               Inicio
