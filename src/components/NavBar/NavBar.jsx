@@ -8,7 +8,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
 
-  useEffect(() => {
+ /*  useEffect(() => {
     function handleScroll() {
       if (window.pageYOffset > 50) {
         setNavbarClass('navbar--active');
@@ -22,7 +22,7 @@ const NavBar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, []); */
 
   const handleLinkClick = () => {
     setMenuOpen(false);
@@ -37,8 +37,9 @@ const NavBar = () => {
       </div>
       <nav className="navbar--Links">
         <ul>
-          <li><Link to='/About'>Sobre mi</Link></li>
+          <li><a href='#sobre-mi'>Sobre mi</a></li>
           <li><a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=sharing'>Resume</a></li>
+          <li><a href='#proyectos'>Proyectos</a></li>
           <li><Link to='/'>Inicio</Link></li>
         </ul>
       </nav>
@@ -54,9 +55,9 @@ const NavBar = () => {
         </section>
         <ul>
           <li>
-            <Link to='/About' onClick={handleLinkClick}>
+            <a href='/About' onClick={handleLinkClick}>
               Sobre mi
-            </Link>
+            </a>
           </li>
           <li>
             <a href='https://drive.google.com/file/d/1gPzb9hwdtN4UYSWCufVjLSUEX5n0pv3N/view?usp=sharing' onClick={handleLinkClick}>

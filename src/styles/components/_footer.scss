@@ -10,7 +10,7 @@
     a {
         font-size: 40px;
         text-decoration: none;
-        color: $tertiary-color;
+        color: $secondary-color;
         transition: all 0.3s;
 
         &:hover {
@@ -25,11 +25,11 @@
 
     a {
         font-size: 40px;
-        color: $tertiary-color;
+        color: $secondary-color;
         transition: all 0.3s;
 
         &:hover {
-            color: $secondary-color;
+            color: $tertiary-color;
         }
     }
 }
@@ -37,13 +37,13 @@
 .container--Footer--Logo a {
     @include font-orbitron;
     text-decoration: none;
-    color: $tertiary-color;
+    color: $secondary-color;
     font-size: 40px;
     @include pm;
     cursor: pointer;
 
     &:hover {
-        color: $secondary-color;
+        color: $tertiary-color;
         transition: all 0.3s;
     }
 }

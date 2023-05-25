@@ -1,8 +1,8 @@
 $color-navbar-1: rgb(36, 48, 61);
 $color-navbar-2: rgba(36, 48, 61, 0.6);
 $primary-color: #283845;
-$secondary-color: #0D9488;
-$tertiary-color: #f6f6f6;
+$secondary-color: #CCCCCC;
+$tertiary-color: #d65725;
 $fifth-color: #000000;
 
 @mixin font-orbitron{
@@ -23,7 +23,7 @@ $fifth-color: #000000;
 @mixin links {
     background-size: 100% 2px;
     cursor: pointer;
-    color: rgb(13, 148, 136);
+    color: #d65725;
 };
 
 @mixin pm{

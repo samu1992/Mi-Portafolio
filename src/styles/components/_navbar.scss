@@ -1,14 +1,17 @@
 .navbar-container {
     @include pm;
     @include centrar;
+    position: fixed;
+    background-color: $color-navbar-1;
     width: 100%;
-    height: 130px;
+    height: 80px;
     top: 0;
     gap: 150px;
     width: 100%;
     z-index: 10;
     font-size: 20px;
     transition: all 0.6s;
+
 
 
     a{
@@ -18,15 +21,15 @@
     .container--Redes {
         display: flex;
         gap: 40px;
-        margin: 0px;
+        margin: 0px 10px;
 
         a {
             font-size: 30px;
-            color: $secondary-color;
+            color: $tertiary-color;
             transition: all 0.3s;
 
             &:hover {
-                color: $tertiary-color;
+                color: #CCCCCC;
             }
         }
     }
@@ -51,7 +54,7 @@
     ul {
         @include centrar;
         border: 1px solid linear-gradient(to right, #0D9488, #FF8C00, #FF0080);
-        box-shadow: 0 0 5px 2px $secondary-color;
+        box-shadow: 0 0 5px 2px rgba(255,255,255,0.2);
         background-color: $color-navbar-1;
         flex-direction: row;
         list-style: none;
@@ -66,7 +69,7 @@
             background-repeat: no-repeat;
             background-size: 0% 2px;
             transition: background-size .3s;
-            color: $tertiary-color;
+            color: #CCCCCC;
             &:hover {
                 @include links;
             }
@@ -116,12 +119,14 @@
 
 .navbar--MenuButton{
     display: none;
+    margin-right: 15px;
 }
 
 @media only screen and (max-width: 800px){
     .navbar-container{
         @include centrar-between;
         gap: 0px;
+        padding: 10px 45px;
     }
     .navbar--Links{
         display: none;
@@ -155,7 +160,7 @@
         position: absolute;
         top: 0px;
         overflow: hidden;
-        left: 0px;
+        left: 35px;
         display: flex;
         flex-direction: column;
         padding: 15px;

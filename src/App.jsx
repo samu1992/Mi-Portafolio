@@ -14,6 +14,7 @@ const Portfolio = () => {
         <NavBar />
         <Presentacion/>
         <Habilidades/>
+        <About/>
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='/About' element={<About />} />

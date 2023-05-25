@@ -1,4 +1,4 @@
-import foto from '../../imagenes/miFoto.jpg';
+//import foto from '../../imagenes/miFoto.jpg';
 const Presentacion = () => {
 
     return (
@@ -7,7 +7,7 @@ const Presentacion = () => {
                 <p className='tracking-in-expand'>Hola, mi nombre es <strong>Samuel Carrizo,</strong> desarrollador web front-end creativo, apasionado por crear experiencias únicas.
                 </p>
             </section>
-            <div className='mi--Foto'><img alt='error al cargar mi foto'src={foto}/></div>
+            {/* <div className='mi--Foto'><img alt='error al cargar mi foto'src={foto}/></div> */}
         </aside>
     )
 }

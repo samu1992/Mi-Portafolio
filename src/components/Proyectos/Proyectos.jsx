@@ -9,7 +9,7 @@ import todo from '../../imagenes/ToDo.png';
 
 const Proyectos = () => {
     return (
-        <main className='container--Proyectos'>
+        <main id='proyectos' className='container--Proyectos'>
             <aside className='proyectos--Lista'>
                 <section className='proyectos--Titulo'>
                     <h2>TRABAJOS</h2>

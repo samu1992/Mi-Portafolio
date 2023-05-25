@@ -1,24 +1,25 @@
 .container--About {
     @include centrar;
+    min-width: 100%;
     flex-wrap: wrap;
-    padding: 50px;
-    max-width: 100%;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 80px;
 
     .parrafo {
         @include centrar;
+        flex-direction: column;
         text-transform: uppercase;
-        font-size: 2.2rem;
-        line-height: 3.5rem;
-        border-left: 1px solid rgba(248, 248, 248, 0.1);
+        width: 50%;
         padding: 20px;
-        text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
-        margin-top: 100px;
-        width: 80%;
+
 
         p {
-            font-size: 2.2rem;
-            line-height: 3.5rem;
-            color: $tertiary-color;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.25);
+            color: $secondary-color;
+            margin-bottom: 15px
         }
     }
 
@@ -27,6 +28,19 @@
         max-width: 100%;
         overflow: hidden;
         gap: 50px;
+    }
+}
+
+.container--foto {
+    height: 100%;
+    @include centrar;
+
+    img{
+        object-fit: cover;
+        overflow: hidden;
+        width: 350px;
+        height: 450px;
+        border: 0.5px solid $primary-color;
     }
 }
 
