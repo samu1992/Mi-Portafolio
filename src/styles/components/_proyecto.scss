@@ -14,7 +14,7 @@
     @include shadow;
 
     &:hover{
-        transform: scale(1.02);
+        @include shadow-3;
     }
 
     
@@ -70,17 +70,18 @@
         gap: 8px;
         padding: 7px 10px;
         border-radius: 5px;
-        color: #CCCCCC;
         border: none;
+        color: #CCCCCC;
         background-color: $tertiary-color ;
 
         &:hover {
             background-color: $secondary-color;
+            color: $tertiary-color;
         }
-
-        .a {
-            color: $primary-color;
-            text-decoration: none;
+        a,i{
+            &:hover{
+                color: $tertiary-color;
+            }
         }
     }
 }
