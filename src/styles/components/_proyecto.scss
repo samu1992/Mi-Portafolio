@@ -1,7 +1,6 @@
 .proyecto {
     @include centrar-between;
     flex-direction: column;
-    padding: 5px;
     gap: 40px;
     margin-bottom: 50px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -9,7 +8,8 @@
     border-radius: 5px;
     cursor: pointer;
     width: 370px;
-    height: 450px;
+    min-height: 450px;
+    overflow: hidden;
     transition: all 0.5s;
     @include shadow;
 
@@ -25,10 +25,11 @@
     }
 
     img {
-        width: 350px;
+        width: 370px;
+        top: 0;
         height: 250px;
-        border-radius: 5px;
         object-fit: cover;
+        margin: 0;
     }
     section{
         display: flex;
@@ -94,9 +95,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .container_proyectos {
+    /* .container_proyectos {
         padding: 10px;
-    }
+    } */
 
     .proyecto--Detalle {
         width: 100%;
@@ -108,11 +109,11 @@
         }
     }
 
-    .proyecto img {
+    /* .proyecto img {
         width: 350px;
         height: auto;
         object-fit: cover;
-    }
+    } */
 }
 
 @media only screen and (max-width: 782px) {
