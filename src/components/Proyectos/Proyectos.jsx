@@ -6,6 +6,7 @@ import gallery from '../../imagenes/dog-gallery.png';
 import Proyecto from '../Proyecto/Proyecto';
 import todo from '../../imagenes/Todolist.png';
 import ai from '../../imagenes/TheAI.png';
+import form from '../../imagenes/Form.png'
 
 
 const Proyectos = () => {
@@ -41,6 +42,13 @@ const Proyectos = () => {
                         site='https://soley-porfolio.vercel.app/'
                         code='https://github.com/samu1992/soley-porfolio'
                         tech='#Vite #React #Sass #JavaScript #Next' />
+                    <Proyecto
+                        title="Formulario"
+                        description="Formulario interactivo. Brinda una experiencia fluida al usuario y demuestra habilidades en desarrollo frontend."
+                        img={form}
+                        site='https://form-seaclub.vercel.app/'
+                        code='https://github.com/samu1992/formSeaclub'
+                        tech='React, Next13'/>
                         <Proyecto
                         title="Dogs Gallery"
                         description="Galeria: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una galeria."
