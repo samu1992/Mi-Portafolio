@@ -1,11 +1,25 @@
-.container-App{
+.container-App {
     @include pm;
-    background-color: $primary-color;
     font-family: 'Space Grotesk', sans-serif;
     @include centrar;
     flex-direction: column;
     min-width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    z-index: 8;
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -2,7 +2,6 @@
     @include pm;
     @include centrar;
     position: fixed;
-    background-color: $color-navbar-1;
     width: 100%;
     height: 80px;
     top: 0;
@@ -36,16 +35,18 @@
     }
 }
 .navbar--active{
-    position: fixed;
-    top: 100px;
-    left: 0;
+    @include pm;
     @include centrar;
-    flex-direction: column;
-    border: 1px solid $secondary-color;
-    background-color: $color-navbar-2;
-    padding: 18px 10px 18px 10px;
-    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    gap: 150px;
+    width: 100%;
+    z-index: 10;
+    font-size: 20px;
     transition: all 0.7s;
+    background-color: rgba(40, 56, 69, 0.6);
 }
 
 .navbar--Links {
@@ -55,8 +56,8 @@
     ul {
         @include centrar;
         border: 1px solid linear-gradient(to right, #0D9488, #FF8C00, #FF0080);
-        box-shadow: 0 0 5px 2px rgba(255,255,255,0.2);
-        background-color: $color-navbar-1;
+        box-shadow: 0 0 5px 2px rgba(96, 242, 242, 0.497);
+        background-color: rgba(40, 56, 69, 0.3);
         flex-direction: row;
         list-style: none;
         gap: 50px;
@@ -170,13 +171,5 @@
     }
 }
 @media only screen and (max-width: 500px){
-    .navbar--active{
-        position: absolute;
-        flex-direction: row;
-        top: 65px;
-        border: none;
-        background-color: transparent;
-        padding: 10px;
-        border-radius: none;
-    }
+
 }

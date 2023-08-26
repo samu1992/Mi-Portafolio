@@ -4,6 +4,9 @@
     padding: 25px;
     max-width: 100%;
     gap: 60px;
+    position: relative;
+    z-index: 8;
+    bottom: 0px;
 }
 
 .container--Footer--Email {

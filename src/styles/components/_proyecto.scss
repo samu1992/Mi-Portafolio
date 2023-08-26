@@ -8,9 +8,9 @@
     border-radius: 5px;
     cursor: pointer;
     width: 370px;
-    min-height: 450px;
     overflow: hidden;
     transition: all 0.5s;
+    padding-top: 0;
     @include shadow;
 
     &:hover{

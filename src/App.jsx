@@ -8,9 +8,16 @@ import Presentacion from './components/Presentacion/Presentacion.jsx';
 import Habilidades from './components/Habilidades/Habilidades.jsx';
 import { ContactUs } from './components/Formulario/Formulario.jsx';
 
+
 const Portfolio = () => {
   return (
-    <main className="container-App">
+    <main className="container-App" style={{fontFamily:'DM Sans'}}>
+      <div className="video-background">
+        <video autoPlay muted loop id="video-background">
+          <source src='./video2.mp4' type="video/mp4" />
+            tu navegador no soporta HTML5
+        </video>
+      </div>
       <BrowserRouter>
         <NavBar />
         <Presentacion/>

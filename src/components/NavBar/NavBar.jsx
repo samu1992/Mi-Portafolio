@@ -8,7 +8,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
 
- /*  useEffect(() => {
+  useEffect(() => {
     function handleScroll() {
       if (window.pageYOffset > 50) {
         setNavbarClass('navbar--active');
@@ -22,14 +22,14 @@ const NavBar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); */
+  }, []);
 
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
   return (
-    <header className="navbar-container">
-      <div className={`container--Redes ${navbarClass}`}>
+    <header className={`navbar-container ${navbarClass}`}>
+      <div className='container--Redes'>
         <div><a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/samuel-carrizo-844980176/"><i className=" fab fa-linkedin"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="."><i className=" fab fa-instagram"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992"><i className="fab fa-github"></i></a></div>

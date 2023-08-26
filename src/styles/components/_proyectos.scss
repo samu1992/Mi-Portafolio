@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: 100px;
+    z-index: 4;
 
     a {
         text-decoration: none;
@@ -96,7 +97,7 @@
         .proyectos--Titulo {
             padding: 20px;
             padding: 0;
-            width: 60%;
+            width: 80%;
         }
     }
 
