@@ -2,9 +2,7 @@ import elegant from '../../imagenes/elegant.png';
 import faunaUrbana from '../../imagenes/fondoGit.png';
 import portfolio from '../../imagenes/soley.png';
 import gallery from '../../imagenes/dog-gallery.png';
-//import tip from '../../imagenes/tip_calculator.png';
 import Proyecto from '../Proyecto/Proyecto';
-import todo from '../../imagenes/Todolist.png';
 import ai from '../../imagenes/TheAI.png';
 import form from '../../imagenes/Form.png'
 
@@ -65,22 +63,6 @@ const Proyectos = () => {
                         code='https://github.com/samu1992/the-ai-helper'
                         tech='#React #Vite #Sass #JavaScript'
                     />
-                    <Proyecto
-                        title="To Do List"
-                        description="Lista de tareas: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una lista de tareas."
-                        img={todo}
-                        site="https://to-do-sepia-alpha.vercel.app/"
-                        code="https://github.com/samu1992/to-do"
-                        tech='#React #Vite #JavaScript'
-                    />
-                    {/* <Proyecto
-                        title="Tip Calculator"
-                        description="Esta es una calculadora de propina simple hecha con React y Vite. Fue creada con fines educativos como parte de la práctica de desarrollo web."
-                        img={tip}
-                        site="https://tip-calculator-eosin.vercel.app/"
-                        code="https://github.com/samu1992/tip-calculator"
-                        tech="#React #Vite #JavaScript"
-                        /> */}
                 </article>
             </aside>
         </main>
