@@ -1,4 +1,4 @@
-import foto from '../../imagenes/foto-1.jpg';
+import foto from '../../assets/imagenes/foto-1.jpg';
 const About = () => {
   return (
     <main className='container--About' id='sobre-mi'>

@@ -5,7 +5,7 @@ $secondary-color: #CCCCCC;
 $tertiary-color: #d65725;
 $fifth-color: #000000;
 
-@mixin font-orbitron{
+@mixin font-orbitron {
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -14,6 +14,7 @@ $fifth-color: #000000;
     justify-content: center;
     align-items: center;
 }
+
 @mixin centrar-between {
     display: flex;
     justify-content: space-between;
@@ -24,17 +25,19 @@ $fifth-color: #000000;
     background-size: 100% 2px;
     cursor: pointer;
     color: rgb(214, 87, 37);
-};
+}
 
-@mixin pm{
+;
+
+@mixin pm {
     padding: 0;
     margin: 0;
 }
 
 @mixin shadow {
-    box-shadow: 0px 10px 38px 2px rgba(0,0,0,0.18);
-    -webkit-box-shadow: 0px 10px 38px 2px rgba(0,0,0,0.18);
-    -moz-box-shadow: 0px 10px 38px 2px rgba(0,0,0,0.18);
+    box-shadow: 0px 10px 38px 2px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 10px 38px 2px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 10px 38px 2px rgba(0, 0, 0, 0.18);
 }
 
 @mixin shadow-2 {
@@ -42,10 +45,11 @@ $fifth-color: #000000;
     -webkit-box-shadow: 0px 10px 38px 2px rgba(13, 148, 136, 0.18);
     -moz-box-shadow: 0px 10px 38px 2px rgba(13, 148, 136, 0.18);
 }
+
 @mixin shadow-3 {
-    box-shadow: 0px 0px 5px 0px rgba(96, 242, 242,0.83);
--webkit-box-shadow: 0px 0px 5px 0px rgba(96, 242, 242,0.83);
--moz-box-shadow: 0px 0px 5px 0px rgba(96, 242, 242,0.83);
+    box-shadow: 0px 0px 5px 0px rgba(96, 242, 242, 0.83);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(96, 242, 242, 0.83);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(96, 242, 242, 0.83);
 }
 
 
@@ -82,4 +86,10 @@ $fifth-color: #000000;
     100% {
         opacity: 1;
     }
+}
+
+@mixin backg {
+    background: linear-gradient(180deg, rgba(255, 254, 236, 0.35) 0%, rgba(255, 254, 236, 0.20) 100%);
+    background-blend-mode: soft-light;
+    backdrop-filter: blur(80px);
 }
