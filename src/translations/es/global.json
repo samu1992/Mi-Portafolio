@@ -1,0 +1,44 @@
+{
+    "header": {
+        "about": "Sobre mi",
+        "resume": "Resume",
+        "project": "Proyectos"
+    },
+    "presentacion": {
+        "entrada": {
+            "part1": "¡HOLA, MI NOMBRE ES ",
+            "part2": "SAMUEL CARRIZO, ",
+            "part3": "DESARROLLADOR WEB DE FRONT-END!"
+        }
+    },
+    "projects": [
+        {
+            "title": "Landing Page",
+            "description": "Proyecto en desarrollo, constantemente estoy subiendo cambios, dentro de poco el mismo estará más completo. aja aca esta"
+        },
+        {
+            "title": "Elegant",
+            "description": "E-commerce: Desarrollo de tienda online, con una base de datos creada en Firebase. Proyecto final del curso de React js."
+        },
+        {
+            "title": "Fauna Urbana",
+            "description": "Organización benéfica dedicada al rescate de perros en situación de calle y abandono. Dicha Website se donará a la organización."
+        },
+        {
+            "title": "Portafolio",
+            "description": "Desarrollo de portafolio para Soley Flores diseñadora UX/UI (responsive en proceso)."
+        },
+        {
+            "title": "Reclama Smart",
+            "description": "Proyecto en colaboración con el equipo de FooTalent para un estudio jurídico."
+        },
+        {
+            "title": "Formulario",
+            "description": "Formulario interactivo. Brinda una experiencia fluida al usuario y demuestra habilidades en desarrollo frontend."
+        },
+        {
+            "title": "Dogs Gallery",
+            "description": "Galería: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una galería."
+        }
+    ]
+}

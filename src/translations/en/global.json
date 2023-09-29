@@ -1,0 +1,14 @@
+{
+    "header":{
+        "about": "About",
+        "resume": "Resume",
+        "project": "Projects"
+    },
+    "presentacion":{
+        "entrada": {
+            "part1": "HELLO, MY NAME IS ",
+            "part2": "SAMUEL CARRIZO, ",
+            "part3": "FRONT-END WEB DEVELOPER."
+        }
+    }
+}

@@ -1,8 +1,9 @@
 import { dataProject } from '../../assets/constants/constants';
 import Proyecto from '../Proyecto/Proyecto';
-
+import { useTranslation } from 'react-i18next';
 
 const Proyectos = () => {
+    const [t, i18n] = useTranslation("global");
     return (
         <main id='proyectos' className='container--Proyectos'>
             <aside className='proyectos--Lista'>
@@ -13,6 +14,7 @@ const Proyectos = () => {
                 </section>
                 <article>
                     {dataProject.map(({title, description, img, site, code, tech}, index)=>{
+                        
                         return(
                             <Proyecto
                             key={index}
