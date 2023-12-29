@@ -1,6 +1,7 @@
 .navbar-container {
     @include pm;
     @include centrar;
+    background-color: $primary-color;
     position: fixed;
     width: 100%;
     height: 80px;
