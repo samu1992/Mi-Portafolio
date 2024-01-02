@@ -13,7 +13,7 @@ const Proyecto = (props) => {
                 </section>
             </div>
             <div className='proyectos--Button'>
-                <button><a className="a" target='_blank' rel="noreferrer" href={props.code}><i className=" fab fa-github"></i>       GitHup</a></button>
+                <button><a className="a" target='_blank' rel="noreferrer" href={props.code}><i className=" fab fa-github"></i>       Github</a></button>
                 <p>{props.tech}</p>
             </div>
         </article>
