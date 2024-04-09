@@ -31,7 +31,7 @@ const NavBar = () => {
         <div><a target="_blank" rel='noreferrer' href="."><i className=" fab fa-instagram"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992"><i className="fab fa-github"></i></a></div>
         <div><a target="_blank" rel='noreferrer' href="https://github.com/samu1992/Mi-Portafolio"><i className="fa fa-code"></i></a></div>
-{/*         <button onClick={()=> i18n.changeLanguage("es")}>es</button>
+         {/* <button onClick={()=> i18n.changeLanguage("es")}>es</button>
         <button onClick={()=> i18n.changeLanguage("en")}>en</button> */}
       </div>
       <nav className="navbar--Links">
