@@ -57,14 +57,14 @@ export const dataProject = [
         code: 'https://github.com/samu1992/formSeaclub',
         tech: 'React, Next13'
     },
-    {
+    /* {
         title: "Landing",
         description: "Una página de aterrizaje diseñada con precisión técnica para captar la atención del usuario desde el primer instante.",
         img: token,
         site: 'https://token-ruddy-six.vercel.app/',
         code: 'https://github.com/samu1992/token',
         tech: '#React #Nextjs #Tailwind #TypeScript'
-    },
+    }, */
     {
         title: "Dogs Gallery",
         description: "Galeria: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una galeria.",
