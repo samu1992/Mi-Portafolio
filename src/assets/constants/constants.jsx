@@ -6,9 +6,18 @@ import form from '../imagenes/Form.png';
 import elegant from '../imagenes/elegant.png'
 import reclama from '../imagenes/reclama.png'
 import token from '../imagenes/token.png'
+import vintex from '../imagenes/vintex.png'
 
 
 export const dataProject = [
+    {
+        title: 'Startup',
+        description: 'Agencia de desarrollo de software, tengo la tarea de implementar una nueva UI e animaciones(sigue en desdarrollo)',
+        img: vintex,
+        site: 'https://vintex-it-solutions.vercel.app/es',
+        code: 'https://github.com/VintexSoftware/VINTEX-IT-SOLUTIONS',
+        tech: '#Tailwind #React #TypeScript #Next'
+    },
     {
         title: 'Landing Page',
         description: 'Proyecto en desarrollo, constantemente estoy subiendo cambios, dentro de poco el mismo estara mas completo.',
@@ -49,22 +58,22 @@ export const dataProject = [
         code: 'https://github.com/samu1992/reclama-smart',
         tech: '#React #Next #TypeScript'
     },
-    {
+   /*  {
         title: "Formulario",
         description: "Formulario interactivo. Brinda una experiencia fluida al usuario y demuestra habilidades en desarrollo frontend.",
         img: form,
         site: 'https://form-seaclub.vercel.app/',
         code: 'https://github.com/samu1992/formSeaclub',
         tech: 'React, Next13'
-    },
-     {
+    }, */
+     /* {
         title: "Landing",
         description: "Una página de aterrizaje diseñada con precisión técnica para captar la atención del usuario desde el primer instante.",
         img: token,
         site: 'https://token-ruddy-six.vercel.app/',
         code: 'https://github.com/samu1992/token',
         tech: '#React #Nextjs #Tailwind #TypeScript'
-    },
+    }, */
     {
         title: "Dogs Gallery",
         description: "Galeria: En proceso de desarrollo, con la finalidad de mostrar habilidades en manejo de datos, en este caso una galeria.",
